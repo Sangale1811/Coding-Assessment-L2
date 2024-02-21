@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Display</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="Images/logo.png" />
+  </head>
+  <body>
+    <h1 class="title">SELECT YOUR CHOICE</h1>
+    <div class="tabs">
+      <button class="tablinks active" onclick="openCategory(event, 'men')">
+        <img src="Images/men.jpg" alt="Men" class="icon" /> Men
+      </button>
+
+      <button class="tablinks" onclick="openCategory(event, 'women')">
+        <img src="Images/women.jpg" alt="Men" class="icon" />Women
+      </button>
+      <button class="tablinks" onclick="openCategory(event, 'kids')">
+        <img src="Images/kids.png" alt="Men" class="icon" />Kids
+      </button>
+    </div>
+
+    <div id="men" class="tabcontent active"></div>
+    <div id="women" class="tabcontent"></div>
+    <div id="kids" class="tabcontent"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
